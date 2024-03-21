@@ -1,13 +1,21 @@
-﻿namespace modul5_1302204112
-{
-    internal class Program
+﻿
+    class Penjumlahan
     {
-        static void Main(string[] args)
+        public void JumlahTigaAngka<T>(T angka1, T angka2, T angka3)
         {
-            Console.WriteLine("branc baru bangetttt");
+            dynamic total = (dynamic)angka1 + (dynamic)angka2 + (dynamic)angka1;
+            Console.WriteLine("Total adalah =" + total);
         }
     }
-}
+
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            Penjumlahan penjumlahan = new Penjumlahan();
+            penjumlahan.JumlahTigaAngka<float>(13, 02, 20);
+        }
+    }
 
 
 
